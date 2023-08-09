@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Este site serve para analisar as imagens em diversos dispositivos</p>
+    <p>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+            <img src="Imagens/foto-g.png" alt="Foto grande">
+
+        </picture>
+
+    <h1>Reproduzindo audios</h1>
+        <audio src="./media/maquinadotempo-matuer.mp3" controls autoplay></audio>
+        <audio preload="metadata">
+            <source srcset="./media/maquinadotempo-matuer.mp3" type="audio/mpeg">
+        </audio>
+
+    </p> 
+</body>
+</html>
